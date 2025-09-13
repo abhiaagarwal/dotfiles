@@ -1,0 +1,36 @@
+[core]
+	excludesfile = ~/.config/git/ignore
+
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[user]
+	name = "Abhi Agarwal"
+	email = "abhiaagarwal01@gmail.com"
+	signingkey = 98BCB70B1890F9CE
+[commit]
+	gpgsign = true
+[init]
+	defaultBranch = main
+[gpg]
+	program = /opt/homebrew/bin/gpg
+
+[includeIf "gitdir:~/Developer/GeorgiaTech/"]
+    path = ~/Developer/GeorgiaTech/.gitconfig
+
+[credential "https://github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://github.gatech.edu"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[push]
+	autoSetupRemote = true
+	autoSetupRemote = true
+[pull]
+	rebase = true

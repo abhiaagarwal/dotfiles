@@ -1,0 +1,5 @@
+[build]
+rustc-wrapper = "/opt/homebrew/bin/sccache"
+
+[env]
+PYO3_PYTHON="/opt/homebrew/bin/python3"

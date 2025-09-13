@@ -1,0 +1,4 @@
+macos-titlebar-style="tabs"
+theme="dark:catppuccin-mocha,light:catppuccin-latte"
+font-family="FiraCode-Retina"
+shell-integration-features="sudo"
