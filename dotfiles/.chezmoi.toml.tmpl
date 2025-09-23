@@ -1,0 +1,10 @@
+{{- $email := promptStringOnce . "email" "Email address" -}}
+{{- $use_cursor := promptBoolOnce . "use_cursor" "Do you use Cursor? (true/false)" -}}
+
+[data]
+    email = {{ $email | quote }}
+    use_cursor = {{ $use_cursor }}
+
+[edit]
+    args = ["-r", "--wait"]
+    command = "{{ if $use_cursor }}cursor{{ else }}code{{ end }}"

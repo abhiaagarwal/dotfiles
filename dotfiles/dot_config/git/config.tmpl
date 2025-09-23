@@ -8,10 +8,7 @@
 	smudge = git-lfs smudge -- %f
 [user]
 	name = "Abhi Agarwal"
-	email = "abhiaagarwal01@gmail.com"
-	signingkey = 98BCB70B1890F9CE
-[commit]
-	gpgsign = true
+	email = "{{ .email | quote }}"
 [init]
 	defaultBranch = main
 [gpg]

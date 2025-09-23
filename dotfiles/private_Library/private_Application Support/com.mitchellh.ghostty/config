@@ -1,4 +1,7 @@
 macos-titlebar-style="tabs"
-theme="dark:catppuccin-mocha,light:catppuccin-latte"
+theme="dark:Catppuccin Mocha,light:Catppuccin Latte"
 font-family="FiraCode-Retina"
 shell-integration-features="sudo"
+window-save-state="always"
+window-padding-x="8"
+window-padding-y="8"
