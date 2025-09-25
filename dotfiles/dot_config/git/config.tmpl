@@ -28,6 +28,26 @@
 	helper = !/opt/homebrew/bin/gh auth git-credential
 [push]
 	autoSetupRemote = true
-	autoSetupRemote = true
+	followTags = true
 [pull]
 	rebase = true
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+[fetch]
+	prune = true
+	pruneTags = true
+	all = true
+[rebase]
+	updateRefs = true
+	autoStash = true
+[merge]
+	conflictstyle = zdiff3
+[rerere]
+	enabled = true
