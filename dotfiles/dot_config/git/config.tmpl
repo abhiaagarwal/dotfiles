@@ -8,7 +8,7 @@
 	smudge = git-lfs smudge -- %f
 [user]
 	name = "Abhi Agarwal"
-	email = "{{ .email | quote }}"
+	email = {{ .email | quote }}
 [init]
 	defaultBranch = main
 [gpg]

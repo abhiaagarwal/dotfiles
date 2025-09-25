@@ -1,5 +1,10 @@
 {{- $email := promptStringOnce . "email" "Email address" -}}
 {{- $use_cursor := promptBoolOnce . "use_cursor" "Do you use Cursor? (true/false)" -}}
+{{- $recipient := promptStringOnce . "recipient" "GPG recipient" -}}
+
+encryption = "gpg"
+[gpg]
+    recipient = {{ $recipient | quote }}
 
 [data]
     email = {{ $email | quote }}
